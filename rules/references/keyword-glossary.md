@@ -88,24 +88,28 @@
 - **Ignition**: You may exile a card from your hand to give this creature +2/+0 until end of turn.
 - **Burn X**: When this enters play, deal X damage to any target.
 - **Fireproof**: This permanent can't be dealt damage by red sources.
+- **Overcharge X**: You may pay X additional EP as you cast this spell. If you do, it gains enhanced effects.
 
 ### The Verdant Coil  
 - **Cultivate**: Once per turn, exile the top card of your library to add a Growth counter to target permanent.
 - **Growth**: Permanents with 3+ Growth counters have their effects doubled.
 - **Flourish**: At the beginning of your turn, add a Growth counter to this.
 - **Overgrowth**: When this has 5+ Growth counters, transform it.
+- **Threshold**: If seven or more cards are in graveyards, this has enhanced effects.
 
 ### The Silent Mantle
 - **Intel**: Token created when you successfully bluff or reveal opponent's trap. Spend 3 Intel to look at opponent's hand and exile one card. Intel abilities have escalating costs: 1st use per turn normal cost, 2nd use +2 EP, 3rd+ use +4 EP.
 - **Infiltrate**: This creature can't be blocked if defending player has cards in hand.
 - **Cipher**: When you cast this spell, you may exile it encoded on a creature you control.
 - **Conspire**: As you cast this spell, you may tap two untapped creatures that share a color with it to copy it.
+- **Channel - [Cost]**: You may pay [Cost] and discard this card to activate its Channel ability. Channel only as a sorcery.
 
 ### The Iron Assembly
 - **Assembly Line**: Artifacts you control cost 1 EP less for each other artifact you control, up to a maximum reduction of 4 EP (minimum cost 1 EP).
 - **Modular X**: This enters play with X +1/+1 counters. When it dies, move them to target artifact creature.
 - **Fabricate X**: When this enters play, put X +1/+1 counters on it or create X 1/1 Servo artifact creatures.
 - **Metalcraft**: This ability is active only if you control 3+ artifacts.
+- **Salvage**: Whenever an artifact is put into a graveyard from play, this triggers its Salvage ability.
 
 ## Hybrid Mechanics
 
@@ -122,6 +126,9 @@
 - **Anti-Risk**: Effects that limit or mitigate risk-taking.
 
 ## Miscellaneous Keywords
+
+### Universal Mechanics
+- **Cycle [Cost]**: You may pay [Cost] and discard this card to draw a card. Cycle can be used at instant speed.
 
 ### Counter Types
 - **+1/+1 counter**: Increases creature's power and toughness by 1 each.
