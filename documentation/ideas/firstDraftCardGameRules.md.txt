@@ -1,0 +1,252 @@
+Risk & Resource: A Custom Strategic Card Game
+Overview
+Risk & Resource is a modular card game designed for 2–4 players featuring strategic card usage, a flexible resource system ("pitching" cards), dice-based risk-reward resolution, and bluffing mechanics. Victory is achieved through dynamic win conditions printed on cards themselves, creating evolving goals throughout the game. Players build decks from one of four archetypes or mix and match for custom play.
+
+Core Mechanics
+Resource System (Pitching)
+
+Each card has a Pitch Value (1–3). Any card can be pitched (discarded) to gain energy points (EP) equal to its pitch value.
+Energy is used to play other cards.
+A pitched card is placed at the bottom of the deck (cyclical pitch mechanic) to enable late-game return.
+EP has no maximum - it's purely a resource, not life.
+Maximum hand size: 10 cards (discard down at end of turn)
+
+Victory & Defeat Conditions
+
+No life totals - instead, victory is achieved through Win Condition cards.
+Win Condition cards state specific board states or achievements needed to win.
+Defeat occurs when:
+
+Your deck is empty and you must draw
+You have 10+ cards in your Exile zone
+An opponent's win condition targeting you is fulfilled
+
+
+
+The Exile Pressure System
+
+When attacked by unblocked creatures, instead of losing life, you exile cards from the top of your deck equal to the damage
+This creates tension: your deck is both your resource and your life
+Cards in exile are much harder to recover than graveyard cards
+Some win conditions involve exiling specific cards or reaching exile thresholds
+
+
+Combat System
+Creature Types & Stats
+All creatures have:
+
+Power: Damage dealt in combat
+Defense: Damage needed to destroy (refreshes each turn)
+Speed: Fast creatures deal damage first
+Type: Beast, Construct, Elemental, or Agent
+
+Combat Phases
+
+Declare Attackers: Tap creatures to attack (can target players or creatures)
+Declare Blockers: Defending player assigns blockers
+Speed Resolution: Fast creatures deal damage first
+Normal Resolution: Remaining creatures deal damage
+Pressure Resolution: Unblocked damage exiles cards from defender's deck
+
+Special Combat Rules
+
+Guardian: Must be blocked if able
+Evasive: Can only be blocked by creatures with Evasive or Reach
+Reach: Can block Evasive creatures
+Deadly: Any damage destroys the creature
+Armored X: Prevent the first X damage each turn
+
+Why Keep Opponent's Creatures?
+
+Some creatures have Symbiotic effects that benefit their controller
+Flame Guard example: "Symbiotic - At the start of your turn, gain 2 EP"
+Creates tension: useful resource vs. enabling opponent's win condition
+Some creatures can be "turned" with specific cards
+
+
+Enhanced Card Types
+Permanent Subtypes
+
+Creature: Can attack/block, has P/D
+Artifact: Provides ongoing effects, harder to destroy
+Enchantment: Modifies game rules or other permanents
+Landmark: Powerful effects that affect all players
+Win Condition: Special permanents that provide victory routes
+
+Timing System
+
+Priority: Active player has priority, passes clockwise
+The Stack: Instants and abilities use last-in-first-out resolution
+Response Windows:
+
+After any card is played
+Before/after combat phases
+End of turn
+When win conditions are checked
+
+
+
+Action Economy
+
+One Land/Landmark per turn (if included in deck)
+Unlimited spells as long as you can pay EP
+One attack phase per turn
+Instant speed: Can be played anytime you have priority
+Sorcery speed: Only during your main phase with empty stack
+
+
+Refined Dice Risk Mechanic
+Risk Levels
+Instead of multiple dice, use a single d20 with scaling thresholds:
+
+Low Risk: 6+ to succeed (75% chance)
+Medium Risk: 11+ to succeed (50% chance)
+High Risk: 16+ to succeed (25% chance)
+Extreme Risk: 19+ to succeed (10% chance)
+
+Risk Rewards
+
+Critical Success (natural 20): Double the effect
+Success: Normal effect
+Failure by 1-2: Partial effect (if applicable)
+Failure by 3+: No effect, card discarded
+Critical Failure (natural 1): Opponent gains benefit
+
+
+Refined Bluffing System
+Trap Mechanics
+
+Trap Limit: Maximum 2 face-down traps per player
+Trap Cost: 1 EP to set any card as a trap
+Trap Types:
+
+True Trap: An instant that triggers on specific conditions
+Bluff Trap: Any non-instant card set as psychological warfare
+Delayed Trap: Permanents that enter play when triggered
+
+
+
+Trap Interactions
+
+Challenge: Pay 2 EP to force opponent to reveal a trap
+
+If it's a bluff (non-instant), it's discarded and you draw a card
+If it's real, it triggers immediately targeting the challenger
+
+
+Sweep: Some cards can "sweep" all traps, forcing mass reveal
+Trap Steal: Rare effects can steal face-down traps
+
+
+Updated Deck Archetypes
+1. Embercore Legion – Aggro + Fire Risk
+
+Signature Mechanic: "Ignition" – Creatures can be "ignited" for +2/+0 until end of turn by exiling a card from your hand
+Risk Focus: High-risk, high-reward direct damage spells
+Win Conditions: Deal 15+ pressure damage in one turn, control 5+ Fire creatures, or complete the Trinity of Flames
+
+Example Enhanced Card – Flame Guard
+Type: Creature - Elemental
+Cost: 3 EP
+Stats: 2/3, Fast
+Effect: Symbiotic - Controller gains 2 EP at start of turn. Can only be played on an opponent.
+Special: If this creature deals pressure damage, it deals double.
+Pitch Value: 2
+2. The Verdant Coil – Control + Growth
+
+Signature Mechanic: "Cultivate" – Once per turn, you may exile the top card of your deck to add a Growth counter to a permanent. Permanents with 3+ Growth counters have doubled effects
+Risk Focus: Gambling on long-term investments
+Win Conditions: Control 20+ total power, have 7+ permanents with Growth counters, or achieve the Garden of Eternity
+
+Example Enhanced Card – Living Fortress
+Type: Creature - Plant
+Cost: 5 EP
+Stats: 0/8, Guardian
+Effect: Gets +1/+0 for each Growth counter on any permanent you control
+Risk: Medium Risk - If successful, add a Growth counter to each permanent you control
+Pitch Value: 3
+3. The Silent Mantle – Trickery + Information
+
+Signature Mechanic: "Intel" – When you successfully bluff or reveal an opponent's trap, create an Intel token. Spend 3 Intel tokens to look at target player's hand and exile one card
+Risk Focus: Gambling on reading opponents
+Win Conditions: Have 6+ traps revealed in one game, exile 5+ cards from a single opponent's hand, or complete the Web of Secrets
+
+Example Enhanced Card – Phantom Strike
+Type: Instant / Trap
+Cost: 2 EP
+Effect: If played from hand: Return target creature to owner's hand
+Trap Effect: When an opponent attacks you, return all their attacking creatures to hand and draw 2 cards
+Pitch Value: 1
+4. The Iron Assembly – Artifacts + Synergy
+
+Signature Mechanic: "Assembly Line" – Artifacts you control cost 1 less EP for each other artifact you control (minimum 1)
+Risk Focus: Gambling on perfect timing for combos
+Win Conditions: Control 8+ artifacts, have all 4 pieces of the Infinity Engine, or reduce an opponent's deck to exactly 13 cards
+
+Example Enhanced Card – Scrapyard Titan
+Type: Artifact Creature - Construct
+Cost: 6 EP
+Stats: 5/5, Armored 2
+Effect: When Scrapyard Titan enters play, return up to 2 artifacts from your graveyard to hand
+Risk: High Risk - If successful, create two 1/1 Construct creature tokens
+Pitch Value: 3
+
+Game Setup & Turn Structure
+Setup
+
+Each player builds/selects a 40-card deck
+Shuffle and draw 7 cards (one free mulligan allowed)
+Each player starts with 5 EP (increased from 3)
+Randomly determine first player
+
+Turn Phases
+
+Untap Phase – Untap all tapped permanents, remove temporary effects
+Draw Phase – Draw 2 cards. If you can't draw, you lose
+Resource Phase – Gain 1 EP automatically, then pitch any number of cards
+Main Phase 1 – Play permanents, sorcery-speed effects
+Combat Phase – Declare attackers → Declare blockers → Resolve damage → Apply pressure
+Main Phase 2 – Play more cards, activate abilities
+End Phase – Discard to hand size (10), check win conditions, pass turn
+
+Win Condition Timing
+
+Win conditions are checked:
+
+At the end of each phase
+Whenever a permanent enters or leaves play
+Whenever a card changes zones
+
+
+First player to meet a win condition wins immediately
+Simultaneous wins go to the active player
+
+
+Key Universal Cards
+Core Removal Suite
+
+Shatter (2 EP) - Destroy target artifact or creature with defense 3 or less
+Banish (3 EP) - Exile target permanent
+Reclaim (2 EP) - Return card from your graveyard to hand
+Forbidden Return (4 EP) - Return card from exile to hand
+Pressure Wave (3 EP) - Each opponent exiles top 2 cards of their deck
+
+Protection Suite
+
+Ward (1 EP) - Counter target spell or ability targeting a permanent you control
+Sanctuary (2 EP) - Permanent gains "Cannot be targeted by opponents" until your next turn
+Regenerate (1 EP) - Prevent all damage to target creature this turn
+
+Utility Suite
+
+Scout (1 EP) - Look at top 3 cards of any deck, rearrange them
+Trade Routes (2 EP) - Each player draws 2 cards
+Emergency Pitch (0 EP) - Gain EP equal to cards in your hand, then discard your hand
+
+
+Advanced Rules
+Multiplayer Variants
+
+Alliance Mode: Players can form temporary alliances, sharing win conditions
+Bounty Mode: Defeating a player grants their unspent EP and a card from their hand
+King of the Hill: One player starts as King with 10 starting EP but everyone else draws an extra card per turn
