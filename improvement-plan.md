@@ -73,6 +73,8 @@ Phase 2A → Commit → Continue...
 - All mathematical interactions defined clearly
 - No contradictions between documents
 
+**Post-Check Action**: Commit changes and push to repository after successful validation
+
 ---
 
 ## PHASE 2: Foundation Rules Completion
@@ -124,6 +126,8 @@ Phase 2A → Commit → Continue...
 - Tournament-viable mulligan procedures
 - Clear face-down interaction guidelines
 
+**Post-Check Action**: Commit changes and push to repository after successful validation
+
 ---
 
 ## PHASE 3: Strategic Depth Enhancement
@@ -174,6 +178,8 @@ Phase 2A → Commit → Continue...
 - Counter-play options exist for all strategies
 - No hybrid combinations dominate pure archetypes
 
+**Post-Check Action**: Commit changes and push to repository after successful validation
+
 ---
 
 ## PHASE 4: Tournament Framework
@@ -219,6 +225,8 @@ Phase 2A → Commit → Continue...
 - No critical gaps in competitive rules
 - Judge materials comprehensive and clear
 - New player pathway complete and accurate
+
+**Post-Check Action**: Commit changes and push to repository after successful validation
 
 ---
 

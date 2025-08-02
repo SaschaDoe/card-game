@@ -107,6 +107,20 @@
 - **Fabricate X**: When this enters play, put X +1/+1 counters on it or create X 1/1 Servo artifact creatures.
 - **Metalcraft**: This ability is active only if you control 3+ artifacts.
 
+## Hybrid Mechanics
+
+### Cross-Archetype Keywords
+- **Hybrid**: Cards that require or benefit from two specific archetypes working together.
+- **Fake Intel**: Non-functional Intel tokens created by misinformation effects. Disappear at end of turn.
+- **Overload**: Negative effects that scale with the number of artifacts controlled.
+- **Stunted**: Prevents Growth counters from exceeding a specified limit.
+
+### Counter-Mechanics
+- **Anti-Assembly**: Effects that punish controlling many artifacts.
+- **Anti-Growth**: Effects that limit or punish Growth counter accumulation.
+- **Anti-Intel**: Effects that create false information or punish Intel usage.
+- **Anti-Risk**: Effects that limit or mitigate risk-taking.
+
 ## Miscellaneous Keywords
 
 ### Counter Types

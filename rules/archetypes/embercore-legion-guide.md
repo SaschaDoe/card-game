@@ -272,6 +272,35 @@ Don't play Trinity of Flames without creatures ready to Ignite next turn.
 
 *The Legion's motto: 'First to Strike, Last to Fall, Forever to Burn.'"*
 
+## Hybrid Synergies
+
+### Embercore + Verdant (Wildfire Growth)
+**Strategy**: Use Ignition to trigger Growth effects, creating large creatures that can be Ignited for massive damage.
+**Key Cards**: Flame-Touched Growth, Scorched Earth Renewal
+**Win Condition**: Phoenix Ascension (Growth + Ignition combo)
+
+### Embercore + Silent (Calculated Flames)  
+**Strategy**: Generate Intel through evasive damage, spend Intel for Ignition effects and information advantage.
+**Key Cards**: Pyroclastic Spy, Explosive Misdirection
+**Win Condition**: Secrets in Flames (Damage + Intel spending)
+
+### Embercore + Iron (Forge Fire)
+**Strategy**: Use artifacts to enable cheaper spells, Ignite artifacts for bonus effects.
+**Key Cards**: Molten Constructor, Foundry Infusion  
+**Win Condition**: Mechanical Inferno (Artifacts + Ignition)
+
+## Counter-Strategy Defense
+
+### Against Anti-Risk Effects
+- Include risk-free damage options
+- Side in direct damage for Safety Protocols
+- Have backup plans that don't require risks
+
+### Against Overload Effects
+- Don't overcommit artifacts in Forge Fire builds
+- Include artifact recursion
+- Have non-artifact win conditions available
+
 ## Conclusion
 
 The Embercore Legion rewards players who can balance aggression with calculated risks. Master the art of resource conversion, know when to go all-in, and remember: in the philosophy of fire, there is no tomorrow - only the burning now.

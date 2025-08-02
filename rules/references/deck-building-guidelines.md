@@ -26,8 +26,9 @@
 
 ### 3. Hybrid Archetype
 - Choose 2 archetypes as your base
-- Can use cards from both archetypes
+- Can use cards from both archetypes plus hybrid cards between them
 - Neutral cards available to either archetype
+- Recommended ratio: 60% archetype cards, 40% hybrid/neutral cards
 
 ### 4. Singleton
 - Maximum 1 copy of each card

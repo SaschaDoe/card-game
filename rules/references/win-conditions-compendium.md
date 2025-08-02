@@ -242,3 +242,41 @@ Win Conditions are special permanents that provide alternate victory paths beyon
 - Counter the spell itself
 - Prevent requirements from being met
 - Race with your own win condition
+
+## Hybrid Win Conditions
+
+### Embercore + Verdant: Growth Through Fire
+#### **Phoenix Ascension**
+*Cost: 6 EP | Win Condition - Fire Nature*
+- Victory: If you control 3 creatures with both Growth counters and have been Ignited this turn, you win the game.
+- Strategy: Combine growth acceleration with ignition timing
+
+### Embercore + Silent: Information Burns
+#### **Secrets in Flames**
+*Cost: 5 EP | Win Condition - Fire Shadow*
+- Victory: If you have dealt 15+ damage this turn and spent 10+ Intel this turn, you win the game.
+- Strategy: Aggressive information warfare
+
+### Embercore + Iron: Forge of War
+#### **Mechanical Inferno**
+*Cost: 7 EP | Win Condition - Fire Artifact*
+- Victory: If you control 5+ artifacts and have Ignited 3+ permanents this turn, you win the game.
+- Strategy: Artifact swarm with ignition support
+
+### Verdant + Silent: Hidden Wisdom
+#### **Ancient Knowledge**
+*Cost: 4 EP | Win Condition - Nature Shadow*
+- Victory: If you control 3+ permanents with Growth counters and have 15+ Intel tokens, you win the game.
+- Strategy: Long-term information and growth accumulation
+
+### Verdant + Iron: Living Synthesis
+#### **Technological Evolution**
+*Cost: 6 EP | Win Condition - Nature Artifact*
+- Victory: If you control 4+ artifacts with Growth counters, you win the game.
+- Strategy: Artifact creatures with growth synergies
+
+### Silent + Iron: Perfect Machine
+#### **Clockwork Conspiracy**
+*Cost: 5 EP | Win Condition - Shadow Artifact*
+- Victory: If you control 6+ artifacts and have looked at opponents' hands 8+ times this game, you win the game.
+- Strategy: Information-driven artifact control
