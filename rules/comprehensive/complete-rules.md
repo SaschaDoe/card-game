@@ -46,12 +46,27 @@ Every card has:
   - 3rd+ Intel ability used per turn: +4 EP additional cost
 - Intel escalation resets at the beginning of each turn
 
+#### Intel Timing and Priority
+- Spending Intel tokens follows normal priority rules
+- Intel abilities can be activated any time their speed allows (instant vs sorcery speed)
+- Spending Intel tokens themselves doesn't use the stack (like spending EP)
+- The ability purchased with Intel uses the stack normally
+- Players can respond to Intel abilities the same as any other ability
+
 ### 1.5 Assembly Line
 - Assembly Line is a cost reduction mechanic for artifact spells
 - Artifacts with Assembly Line cost 1 EP less for each other artifact you control
 - Maximum cost reduction from Assembly Line: 4 EP
 - All spells have a minimum cost of 1 EP unless stated otherwise
 - Assembly Line only applies when casting the spell, not to abilities
+
+### 1.6 Cost Reduction Stacking
+When multiple cost reduction effects apply to the same spell:
+1. Calculate all cost increases first (additional costs, taxes, etc.)
+2. Apply all cost reductions (Assembly Line, Affinity, Convoke, etc.)
+3. Each reduction effect has its own maximum if specified
+4. Total cost cannot be reduced below 1 EP unless the spell normally costs 0
+5. Alternative costs (such as morph costs) replace the normal cost entirely and don't stack with reductions
 
 ## 2. Game Zones
 
@@ -180,12 +195,23 @@ Every card has:
 5. Players receive priority
 
 #### 4.5.4 Damage Resolution
-1. Fast creatures deal damage first
-   - If a creature would be destroyed, it's destroyed before normal damage
-2. Normal speed creatures deal damage
-3. All damage is dealt simultaneously within each step
-4. Creatures assign damage equal to their power
-5. Damage is marked on creatures (not subtracted from defense)
+
+**First Damage Step (Fast Creatures)**:
+1. All creatures with Fast deal and receive damage simultaneously
+2. Damage assignment follows normal rules (power = damage dealt)
+3. State-based actions are checked: creatures with lethal damage are destroyed
+4. Players do NOT receive priority during damage resolution
+
+**Second Damage Step (Normal Speed)**:
+1. All remaining creatures (without Fast) deal and receive damage simultaneously
+2. This includes any creatures that survived the first damage step
+3. State-based actions are checked again
+4. All damage is marked on creatures (not subtracted from defense)
+
+**Combat Trick Timing**:
+- Instants and abilities can only be played between damage steps, not during them
+- Priority is given after first damage step but before second damage step
+- No responses allowed during actual damage dealing
 
 #### 4.5.5 Pressure Resolution
 1. For each unblocked creature that dealt damage to a player:
@@ -396,3 +422,92 @@ When a player leaves:
 2. All their spells/abilities on stack are removed
 3. All their traps are removed
 4. Any effects they control end
+
+## 11. State-Based Actions
+
+State-based actions are checked automatically whenever a player would receive priority and are performed immediately without using the stack.
+
+### 11.1 Complete State-Based Actions List
+1. **Creature Destruction**: Creatures with damage equal to or greater than their defense are destroyed
+2. **Zero Toughness**: Creatures with 0 or less defense are destroyed
+3. **Exile Loss Condition**: Players with 10 or more cards in exile lose the game
+4. **Library Depletion**: Players who must draw from an empty library lose the game
+5. **Win Condition Check**: All win conditions are evaluated for their victory requirements
+6. **Illegal Aura Attachment**: Auras attached to illegal or nonexistent targets are destroyed
+7. **Counter Cancellation**: +1/+1 and -1/-1 counters on the same permanent cancel each other out
+8. **Hand Size Enforcement**: During end phase cleanup only, players discard down to maximum hand size
+9. **Legend Rule**: Players controlling multiple legendary permanents with the same name choose one to keep, destroy the rest
+10. **Planeswalker Uniqueness**: Players controlling multiple planeswalkers with the same subtype choose one to keep, destroy the rest
+
+### 11.2 State-Based Action Timing
+- Checked before any player receives priority
+- Checked after any spell or ability resolves
+- Performed immediately without using the stack
+- Cannot be responded to or prevented by normal means
+- If any state-based actions are performed, they are checked again until none apply
+
+### 11.3 Multiple State-Based Actions
+When multiple state-based actions would occur simultaneously:
+1. They are all performed at the same time
+2. The active player chooses the order for their own state-based actions
+3. Non-active players choose in turn order
+4. State-based actions are checked again after all are resolved
+
+## 12. Mulligan Procedures
+
+### 12.1 Standard Mulligan (Constructed Formats)
+1. Each player draws their opening hand of 7 cards
+2. Each player may take one free mulligan:
+   - Shuffle hand into library, draw 7 new cards
+3. Additional mulligans after the first:
+   - Shuffle hand into library, draw 6 cards, then scry 1
+   - Each additional mulligan draws 1 fewer card but still scry 1
+4. Minimum hand size: 1 card (cannot mulligan to 0)
+
+### 12.2 Competitive Mulligan (Tournament Play)
+1. Each player draws 7 cards
+2. Paris Mulligan system:
+   - Shuffle hand back, draw 1 fewer card
+   - Continue until satisfied or at 1 card minimum
+   - No scry effects in competitive mulligan
+
+### 12.3 Draft/Limited Mulligan
+1. Each player draws 7 cards
+2. Two free mulligans (draw 7 cards each time)
+3. Additional mulligans follow standard rules (draw 6, scry 1, etc.)
+
+### 12.4 Multiplayer Mulligan
+1. All players decide on mulligans simultaneously
+2. Reveal decisions, then resolve mulligans
+3. Follow format-specific rules (Standard, Competitive, etc.)
+4. Turn order is not affected by mulligan decisions
+
+## 13. Face-Down Permanents
+
+### 13.1 Basic Face-Down Rules
+- Face-down permanents are 2/2 colorless creatures with no abilities
+- They have no name, mana cost, or other characteristics
+- Face-down permanents can be turned face-up by paying their morph cost
+- Only the controller knows what the face-down permanent actually is
+
+### 13.2 Playing Cards Face-Down
+- Cards with morph can be played face-down as 2/2 creatures for 3 EP
+- Face-down permanents enter the battlefield tapped unless stated otherwise
+- Any card can be set as a trap face-down for 1 EP (different from morph)
+
+### 13.3 Face-Down Interactions
+- Spells and abilities that target "creature" can target face-down creatures
+- Effects that care about creature type, color, or other characteristics don't apply to face-down permanents
+- When face-down permanents change zones, they are briefly revealed to all players
+- Clone effects copying face-down permanents copy the face-down status and 2/2 characteristics
+
+### 13.4 Turning Face-Up
+- Pay the morph cost at any time you have priority
+- Creature becomes face-up immediately (doesn't use the stack)
+- All characteristics become those of the actual card
+- Turning face-up doesn't trigger "enters the battlefield" abilities
+
+### 13.5 Face-Down Permanent Death
+- When a face-down permanent would be destroyed or exiled, reveal it briefly
+- It goes to the appropriate zone face-up
+- Any "when this dies" triggers use the actual card's characteristics

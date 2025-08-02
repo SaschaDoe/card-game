@@ -117,8 +117,10 @@
 
 ### Game Markers
 - **Tapped/Untapped**: Tapped permanents are turned sideways and usually can't be used.
-- **Face-down**: Card is hidden information, treated as 2/2 creature unless revealed.
-- **Transformed**: Double-faced cards can transform to their other side.
+- **Face-down**: Card is hidden information, treated as 2/2 colorless creature with no abilities unless revealed.
+- **Morph**: Can be played face-down as 2/2 creature for 3 EP. Can be turned face-up by paying morph cost at any time.
+- **Transform**: Double-faced cards can transform to their other side when triggered abilities resolve.
+- **Scry X**: Look at the top X cards of your library, put any number on top and the rest on bottom in any order.
 - **Legendary**: You can only control one legendary permanent with the same name.
 
 ### Timing

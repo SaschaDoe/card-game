@@ -193,13 +193,18 @@
 ## State-Based Actions (Checked Constantly)
 
 These happen automatically before any player gets priority:
-1. Creatures with damage ≥ defense are destroyed
-2. Creatures with 0 or less toughness are destroyed
-3. Players with 10+ exiled cards lose
-4. Players who must draw from empty library lose
-5. Win conditions are checked
-6. Auras without legal targets are destroyed
-7. +1/+1 and -1/-1 counters cancel out
+1. **Creature Destruction**: Creatures with damage ≥ defense are destroyed
+2. **Zero Defense**: Creatures with 0 or less defense are destroyed
+3. **Exile Loss**: Players with 10+ exiled cards lose
+4. **Library Depletion**: Players who must draw from empty library lose
+5. **Win Condition Check**: All win conditions are evaluated
+6. **Illegal Attachments**: Auras without legal targets are destroyed
+7. **Counter Cancellation**: +1/+1 and -1/-1 counters cancel out
+8. **Hand Size**: During cleanup step only, discard to 10 cards
+9. **Legend Rule**: Multiple legendary permanents with same name - choose one
+10. **Planeswalker Uniqueness**: Multiple planeswalkers with same subtype - choose one
+
+**Timing**: Checked before priority, after spells resolve, performed immediately without using stack
 
 ---
 
