@@ -77,7 +77,7 @@ export class RuleExtractor {
   private async extractGameSetup(ruleText: string, gameType: GameType): Promise<GameSetupRules> {
     const patterns = {
       playerCount: /(\d+)[-\s]?(?:to|-)[-\s]?(\d+)\s+players?/gi,
-      handSize: /(?:starting|initial|deal|draw|start|starts?)\s+(?:hand\s+(?:size|of)|with)?\s*(\d+)\s+cards?/gi,
+      handSize: /(?:starting|initial|deal|draw|start|starts?)\s+(?:hand\s+(?:size|of)|with)?\s*(\d+)\s+cards?|draws?\s+(\d+)\s+cards?/gi,
       deckSize: /(?:deck\s+(?:of|contains|has))?\s*(\d+)\s+cards?/gi
     };
 
@@ -97,7 +97,7 @@ export class RuleExtractor {
     patterns.handSize.lastIndex = 0; // Reset regex
     const handMatch = patterns.handSize.exec(ruleText);
     if (handMatch) {
-      handSize = parseInt(handMatch[1]);
+      handSize = parseInt(handMatch[1] || handMatch[2]);
     }
 
     // Extract deck size

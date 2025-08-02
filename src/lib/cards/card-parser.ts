@@ -141,9 +141,24 @@ export class UniversalCardParser {
       }
     }
     
-    // Extract card type
+    // Extract card type - try multiple patterns
+    let cardType = this.getDefaultCardType(gameType);
+    
+    // Try explicit type declaration first
     const typeMatch = cardText.match(/(?:type|card type)[:\s]*([^\n]+)/i);
-    const cardType = typeMatch ? typeMatch[1].trim() : this.getDefaultCardType(gameType);
+    if (typeMatch) {
+      cardType = typeMatch[1].trim();
+    } else {
+      // Try to infer from card text patterns
+      const textLower = cardText.toLowerCase();
+      if (textLower.includes('spell') || textLower.includes('instant') || textLower.includes('sorcery')) {
+        cardType = 'spell';
+      } else if (textLower.includes('artifact')) {
+        cardType = 'artifact';
+      } else if (textLower.includes('creature')) {
+        cardType = 'creature';
+      }
+    }
     
     const metadata: CardMetadata = {
       gameType,
