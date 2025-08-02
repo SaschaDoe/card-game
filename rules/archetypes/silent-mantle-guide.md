@@ -29,10 +29,11 @@ The Silent Mantle embodies cunning, misdirection, and information warfare. This 
 
 ### Intel Strategy
 - Force trap interactions to generate Intel
-- Use Intel at crucial moments
+- Use Intel at crucial moments - costs escalate per turn
 - Information advantage leads to perfect plays
-- Some cards have alternate Intel costs
-- Intel tokens don't expire
+- Intel abilities cost more per use: 1st normal, 2nd +2 EP, 3rd+ +4 EP
+- Plan Intel usage carefully due to escalating costs
+- Intel tokens don't expire, but save them for key turns
 
 ### Key Intel Cards
 

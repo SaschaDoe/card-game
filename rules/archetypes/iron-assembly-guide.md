@@ -23,16 +23,17 @@ The Iron Assembly represents the pinnacle of synergistic gameplay, where the who
 
 ## Signature Mechanic: Assembly Line
 
-**Assembly Line**: Artifacts you control cost 1 less EP for each other artifact you control (minimum 1 EP).
+**Assembly Line**: Artifacts you control cost 1 EP less for each other artifact you control, up to a maximum reduction of 4 EP (minimum cost 1 EP).
 
-This creates exponential cost reduction as your board develops, enabling explosive turns.
+This creates significant cost reduction as your board develops, enabling explosive turns while maintaining game balance.
 
 ### Assembly Line Strategy
 - First artifacts are expensive
 - Each artifact makes the next cheaper
-- 3+ artifacts enable free/cheap plays
+- 5+ artifacts hit maximum 4 EP reduction
 - Protect early artifacts religiously
 - Sequence plays for maximum reduction
+- Plan around the 4 EP reduction cap for optimal turns
 
 ### Key Assembly Line Cards
 

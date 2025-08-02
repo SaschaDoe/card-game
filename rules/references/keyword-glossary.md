@@ -96,13 +96,13 @@
 - **Overgrowth**: When this has 5+ Growth counters, transform it.
 
 ### The Silent Mantle
-- **Intel**: Token created when you successfully bluff or reveal opponent's trap. 3 Intel = look at opponent's hand and exile one.
+- **Intel**: Token created when you successfully bluff or reveal opponent's trap. Spend 3 Intel to look at opponent's hand and exile one card. Intel abilities have escalating costs: 1st use per turn normal cost, 2nd use +2 EP, 3rd+ use +4 EP.
 - **Infiltrate**: This creature can't be blocked if defending player has cards in hand.
 - **Cipher**: When you cast this spell, you may exile it encoded on a creature you control.
 - **Conspire**: As you cast this spell, you may tap two untapped creatures that share a color with it to copy it.
 
 ### The Iron Assembly
-- **Assembly Line**: Artifacts you control cost 1 less for each other artifact you control (minimum 1).
+- **Assembly Line**: Artifacts you control cost 1 EP less for each other artifact you control, up to a maximum reduction of 4 EP (minimum cost 1 EP).
 - **Modular X**: This enters play with X +1/+1 counters. When it dies, move them to target artifact creature.
 - **Fabricate X**: When this enters play, put X +1/+1 counters on it or create X 1/1 Servo artifact creatures.
 - **Metalcraft**: This ability is active only if you control 3+ artifacts.
